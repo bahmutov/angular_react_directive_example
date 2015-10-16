@@ -5,7 +5,7 @@ var _ = require('lodash');
 var DAYS = _.range(1, 32).map((day) => ("Oct " + day));
 
 var randomMillis = function() {
-  return Math.floor(Math.random() * 10000);
+  return 0;
 }
 
 angular.module("myapp", []).

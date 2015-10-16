@@ -2,7 +2,7 @@
   "name": "angular-react-directive-example",
   "version": "1.0.0",
   "scripts": {
-    "dev": "webpack-dev-server --progress --colors --port 8080"
+    "dev": "webpack-dev-server --progress --colors --port 8090"
   },
   "dependencies": {
     "angular": "^1.4.0-beta.5",
