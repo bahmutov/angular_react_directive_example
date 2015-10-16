@@ -101,7 +101,7 @@ directive("myCalendarCell", function() {
         $timeout(function() {
           $scope.status.isSearching = false;
           $scope.status.searchResults = {options: Math.floor(Math.random() * 5)};
-        }, randomMillis());
+        }, randomMillis(), false);
       }
       $scope.$on('allSearchRequested', function() {
         $scope.cellClicked();
