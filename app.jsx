@@ -24,9 +24,9 @@ directive("myCalendar", function() {
                {{day}}
              </th>
             </tr>
-            <tr ng-repeat="hour in hours">
-             <td ng-repeat="day in days" class="hour-cell">
-               <my-calendar-cell hour="{{hour}}" day="{{day}}"></my-calendar-cell>
+            <tr ng-repeat="hour in ::hours track by $index">
+             <td ng-repeat="day in ::days track by $index" class="hour-cell">
+               <my-calendar-cell hour="{{::hour}}" day="{{::day}}"></my-calendar-cell>
              </td>
             </tr>
            </table>
